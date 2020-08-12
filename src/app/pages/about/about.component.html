@@ -1,0 +1,53 @@
+
+    <div class="ae-grid au-xs-ta-center au-mb-4">
+      
+      <div *ngFor="let persona of infoService.equipo" class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img [src]="[persona.url]" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{ persona.Nombre }}</h5>
+        <p class="ae-u-bolder au-mb-3">{{persona.Subtitulo}}</p>
+        <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">{{persona.Frase}}</p>
+        <a target="_blank" href="https://www.instagram.com/{{persona.Facebook}}"class="rk-social-btn ">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+            @{{persona.Facebook}}</svg></a>
+      </div>
+      </div>
+    <div class="ae-grid au-pt-2">
+      <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+        <h4 class="ae-u-bolder">Dulce Capricho</h4>
+        <p>Dulce Capricho by jessy, derritiendo paladares.</p>
+        <p>Empresa de reposteria. </p>
+      </div>
+    </div>
+    <div class="ae-grid ae-grid--alt au-xs-ptp-1">
+      <div class="ae-grid__item--alt item-lg-4">
+        <h6 class="ae-u-boldest">Acerca de</h6>
+        <p class="au-lh-3">Puedes realizar tu pedido a los siguientes números de celular: 76024367 o 78094845. </p>
+        <p class="au-underline rk-portfolio-inner-website "><a href="https://wa.link/d3lnu9" class="ae-kappa">Click aqui Whatsapp: 78094845</a></p>
+      </div>
+      <p class="au-lh-3">Siguenos en: </p>
+      <a target="_blank"  [href]="" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+        </svg></a>
+        <a target="_blank" [href]="" class="rk-social-btn ">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+          </svg></a>
+        
+
+      <div class="ae-grid__item--alt item-lg-4">
+        <h6 class="ae-u-boldest">Mision</h6>
+        <p class="au-lh-3">	
+          Somos una empresa cuya misión es ofrecer productos de repostería y pasteleria de la más alta calidad con un excelente sabor y a un precio accesible.<br>
+          Establecer un liderazgo con la colaboración y creatividad de nuestro talento  humano, utilizando las mejores materias primas del mercado para satisfacer a nuestros clientes.</p>
+      </div>
+      <div class="ae-grid__item--alt item-lg-4">
+        <h6 class="ae-u-boldest">Vision</h6>
+        <p class="au-lh-3">Ser una empresa líder en el negocio de  panadería y repostería reconocida en la zona norte del país. Destacarnos por la calidad y sabor de nuestros productos, atención y servicio al cliente.</p>
+        <p class="au-lh-3">Utilizando los más altos estándares de calidad y tecnología de vanguardia en nuestros procesos productivos.</p>
+      </div>
+    </div>
+    <p class="au-flex au-pt-4 group-buttons"><a href="portfolio.html" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Ver Catalogo<span class="arrow-cont">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#arrow"></use>
+          </svg></span></a></p>

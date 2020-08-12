@@ -1,0 +1,43 @@
+<section *ngIf="producto">
+    <header [ngStyle]="{'background-image':'url(assets/productos/'+id+'/main.jpg)'}" class="rk-portfolio-cover  item-inside-4">
+      <div class="item-inside__meta">
+        <h1 class="ae-u-bolder rk-portfolio-title ">{{producto.producto}}</h1>
+        <p class="ae-theta rk-portfolio-category ">{{producto.categoria}}</p>
+      </div>
+    </header>
+    <div class="ae-container-fluid">
+      <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+        <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
+          <h2 class="rk-portfolio-inner-title ">{{producto.subtitulo1}}</h2>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
+          <p class="rk-portfolio-inner-client "><span class="ae-lambda">Propietaria: </span><span class="ae-u-bolder">Dulce Capricho</span></p>
+          <p class="au-underline rk-portfolio-inner-website "><a href="https://www.facebook.com/Dulce-Capricho-103320514779340/" class="ae-kappa">facebook/Dulce-Capricho</a></p>
+          <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">{{currentDate | date:'dd/MM/yyyy'}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-8"><img src="assets/productos/{{id}}/pic-1.jpg" alt="Urku Portfolio"></div>
+        <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
+          <p class="au-mb-3">{{producto.subtitulo1}}</p>
+          <p >{{producto.desc1}} </p>
+          <p class="rk-footer__text rk-footer__by">reserva tu pedido desde el siguiente enlace <a href="https://wa.link/d3lnu9" class="ae-u-bolder">Whatsapp.</a></p>
+          <p class="au-underline rk-portfolio-inner-website "><a href="https://wa.link/d3lnu9" class="ae-kappa">Click aqui Whatsapp: 78094845</a></p>
+    
+        </div>
+      </div>
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-8"><img src="assets/productos/{{id}}/pic-2.jpg" alt="Urku Portfolio"></div>
+        <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
+          <p >{{producto.desc2}} </p>
+          <p class="au-mb-3">{{producto.subtitulo2}}</p>
+        
+          <p class="rk-footer__text rk-footer__by">reserva tu pedido desde el siguiente enlace <a href="https://wa.link/d3lnu9" class="ae-u-bolder">Whatsapp.</a></p>
+          <p class="au-underline rk-portfolio-inner-website "><a href="https://wa.link/d3lnu9" class="ae-kappa">Click aqui Whatsapp: 78094845</a></p>
+    
+        </div>
+      </div>
+   </div>
+  </section>
